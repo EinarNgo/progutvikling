@@ -8,11 +8,11 @@ import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
 public class Person {
-    private final StringProperty navn;
-    private final StringProperty adresse;
-    private final StringProperty postkode;
-    private final StringProperty forsikring;
-    private final StringProperty dato;
+    public final StringProperty navn;
+    public final StringProperty adresse;
+    public final StringProperty postkode;
+    public final StringProperty forsikring;
+    public final StringProperty dato;
 
     public Person(String navn, String adresse, String postkode, String forsikring, String dato) {
 

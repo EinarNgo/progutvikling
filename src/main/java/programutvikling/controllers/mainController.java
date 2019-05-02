@@ -5,14 +5,9 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
-import programutvikling.MainApp;
 import programutvikling.base.Person;
-import programutvikling.controllers.helpers.applicationCleaner;
 
 public class mainController {
-
-    private Person nyPerson;
-    private applicationCleaner clean;
 
     @FXML
     private TableView<Person> tblPerson;
@@ -21,13 +16,9 @@ public class mainController {
     @FXML
     private TableColumn<Person, String> ColumnForsikring;
     @FXML
-    private Button btnRegistrer;
-    @FXML
     private TextField txtNavn,txtAdresse,txtPostkode,txtForsikring;
     @FXML
     private DatePicker txtDato;
-
-    private MainApp mainApp;
 
     private ObservableList<Person> pData = FXCollections.observableArrayList();
 
@@ -37,7 +28,6 @@ public class mainController {
         pData.add(new Person("Hans","Hagatjernveien","30501","102120121","10.10.191"));
         pData.add(new Person("Hans1","Hagatjernveien1","30502","102120122","10.10.192"));
         pData.add(new Person("Hans2","Hagatjernveien2","30503","102120123","10.10.193"));
-
     }
 
     /**
@@ -57,8 +47,8 @@ public class mainController {
         tblPerson.getSelectionModel().selectedItemProperty().addListener(
                 (observable, oldValue, newValue) -> showPerson(newValue));
 
-        //Legger til data i kolonne
         tblPerson.setItems(pData);
+
     }
 
     private void showPerson(Person person) {
@@ -77,6 +67,19 @@ public class mainController {
         }
     }
 
+    /*
+    @FXML
+    private void registrerPerson() {
+
+        Person tempPerson = new Person(null,null,null,null,null);
+        boolean okClicked = mainApp.showPersonEditDialog(tempPerson);
+        if (okClicked) {
+            mainApp.getPData().add(tempPerson);
+        }
+
+        txtNavn.setText("Test");
+    }
+    */
 
     @FXML
     private void slettKunde() {
