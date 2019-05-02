@@ -73,9 +73,9 @@
                   <RowConstraints maxHeight="32.0" minHeight="10.0" prefHeight="32.0" valignment="CENTER" vgrow="SOMETIMES" />
                </rowConstraints>
             </GridPane>
-            <Button layoutX="265.0" layoutY="247.0" mnemonicParsing="false" text="Registrer" />
+            <Button layoutX="265.0" layoutY="247.0" mnemonicParsing="false" onAction="#registrerKunde" text="Registrer" />
             <Button layoutX="207.0" layoutY="247.0" mnemonicParsing="false" onAction="#slettKunde" text="Slett" />
-            <Button layoutX="136.0" layoutY="247.0" mnemonicParsing="false" text="Rediger" />
+            <Button layoutX="136.0" layoutY="247.0" mnemonicParsing="false" onAction="#redigerKunde" text="Rediger" />
             <Button layoutX="52.0" layoutY="247.0" mnemonicParsing="false" text="Forsikring" />
          </children>
       </AnchorPane>

@@ -4,8 +4,16 @@ package programutvikling.controllers;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
 import programutvikling.base.Person;
+import programutvikling.controllers.controllersHelper.editController;
+
+import java.io.IOException;
 
 public class mainController {
 
@@ -19,6 +27,8 @@ public class mainController {
     private TextField txtNavn,txtAdresse,txtPostkode,txtForsikring;
     @FXML
     private DatePicker txtDato;
+
+    private Person person;
 
     private ObservableList<Person> pData = FXCollections.observableArrayList();
 
@@ -67,20 +77,6 @@ public class mainController {
         }
     }
 
-    /*
-    @FXML
-    private void registrerPerson() {
-
-        Person tempPerson = new Person(null,null,null,null,null);
-        boolean okClicked = mainApp.showPersonEditDialog(tempPerson);
-        if (okClicked) {
-            mainApp.getPData().add(tempPerson);
-        }
-
-        txtNavn.setText("Test");
-    }
-    */
-
     @FXML
     private void slettKunde() {
         int valgtIndex = tblPerson.getSelectionModel().getSelectedIndex();
@@ -88,6 +84,65 @@ public class mainController {
             tblPerson.getItems().remove(valgtIndex);
         }
     }
+
+    @FXML
+    private void registrerKunde() {
+        launchRegistrerPersonScene();
+    }
+
+    private void launchRegistrerPersonScene() {
+        Parent root = null;
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader();
+            root = fxmlLoader.load(getClass().getResource("/programutvikling/controllers/editKundeScene.fxml").openStream());
+
+        } catch (IOException e) {
+            e.printStackTrace(); // FXML document should be available
+            return;
+        }
+
+        Scene scene = new Scene(root);
+        // add CSS etc. should be here
+        Stage editPersonStage = new Stage();
+        editPersonStage.setTitle("Registrer person");
+        editPersonStage.setScene(scene);
+
+        editPersonStage.initOwner(txtNavn.getScene().getWindow());
+        editPersonStage.initModality(Modality.WINDOW_MODAL);
+        editPersonStage.show();
+    }
+
+    @FXML
+    private void redigerKunde() {
+        launchRedigerPersonScene();
+    }
+
+    private void launchRedigerPersonScene() {
+        Parent root = null;
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader();
+            root = fxmlLoader.load(getClass().getResource("/programutvikling/controllers/editKundeScene.fxml").openStream());
+
+            // Får tak i controlleren og overfører referanse til person-objektet
+            editController controller = fxmlLoader.getController();
+            controller.setPerson(tblPerson.getSelectionModel().getSelectedItem());
+        } catch (IOException e) {
+            e.printStackTrace(); // FXML document should be available
+            return;
+        }
+
+        Scene scene = new Scene(root);
+        // add CSS etc. should be here
+        Stage editPersonStage = new Stage();
+        editPersonStage.setTitle("Endre person");
+        editPersonStage.setScene(scene);
+
+        editPersonStage.initOwner(txtNavn.getScene().getWindow());
+        editPersonStage.initModality(Modality.WINDOW_MODAL);
+        editPersonStage.show();
+    }
+
+
 
     private boolean isInputTrue() {
         String errorMsg = "";
