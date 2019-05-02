@@ -6,17 +6,18 @@ import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.layout.AnchorPane;
-import javafx.stage.Modality;
 import javafx.stage.Stage;
 import programutvikling.base.Person;
 
 public class MainApp extends Application{
 
-    private ObservableList<Person> personData = FXCollections.observableArrayList();
 
     public static void main(String[] args) {
         Application.launch(args);
+    }
+
+
+    public MainApp() {
     }
 
     @Override
@@ -29,7 +30,5 @@ public class MainApp extends Application{
         stage.setTitle("MainApp");
         stage.show();
     }
-
-
 
 }

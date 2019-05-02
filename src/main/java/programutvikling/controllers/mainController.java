@@ -29,13 +29,15 @@ public class mainController {
 
     private MainApp mainApp;
 
-    private ObservableList<Person> personData = FXCollections.observableArrayList();
+    private ObservableList<Person> pData = FXCollections.observableArrayList();
 
     public mainController() {
         // Add some sample data.
-        personData.add(new Person("Hans","Hagatjernveien","30501","102120121","10.10.191"));
-        personData.add(new Person("Hans1","Hagatjernveien1","30502","102120122","10.10.192"));
-        personData.add(new Person("Hans2","Hagatjernveien2","30503","102120123","10.10.193"));
+
+        pData.add(new Person("Hans","Hagatjernveien","30501","102120121","10.10.191"));
+        pData.add(new Person("Hans1","Hagatjernveien1","30502","102120122","10.10.192"));
+        pData.add(new Person("Hans2","Hagatjernveien2","30503","102120123","10.10.193"));
+
     }
 
     /**
@@ -56,7 +58,7 @@ public class mainController {
                 (observable, oldValue, newValue) -> showPerson(newValue));
 
         //Legger til data i kolonne
-        tblPerson.setItems(personData);
+        tblPerson.setItems(pData);
     }
 
     private void showPerson(Person person) {
@@ -75,13 +77,6 @@ public class mainController {
         }
     }
 
-    @FXML
-    private void registrerKunde() {
-        personData.add(new Person(txtNavn.getText(),txtAdresse.getText(),txtPostkode.getText(),txtForsikring.getText(),"Dato"));
-
-        clean.clearScreen(txtNavn,txtAdresse,txtPostkode,txtForsikring);
-
-    }
 
     @FXML
     private void slettKunde() {
