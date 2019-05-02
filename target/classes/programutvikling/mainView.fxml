@@ -1,18 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.canvas.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="programutvikling.controllers.mainController">
-   <children>
-      <AnchorPane layoutX="186.0" layoutY="89.0" prefHeight="200.0" prefWidth="200.0">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="374.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="programutvikling.controllers.mainController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <left>
+      <TableView fx:id="tblPerson" prefHeight="311.0" prefWidth="152.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="ColumnNavn" prefWidth="75.0" text="C1" />
+          <TableColumn fx:id="ColumnForsikring" prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+   </left>
+   <right>
+      <AnchorPane prefHeight="309.0" prefWidth="369.0" BorderPane.alignment="CENTER">
          <children>
-            <Button layoutX="57.0" layoutY="87.0" mnemonicParsing="false" text="Button" />
+            <GridPane layoutX="15.0" layoutY="13.0" prefHeight="226.0" prefWidth="300.0">
+               <children>
+                  <Label text="Navn" />
+                  <Label text="Addresse" GridPane.rowIndex="1" />
+                  <Label text="Forsikringsnr" GridPane.rowIndex="3" />
+                  <DatePicker fx:id="txtDato" editable="false" prefHeight="27.0" prefWidth="293.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <TextField fx:id="txtAdresse" editable="false" prefHeight="27.0" prefWidth="240.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="txtForsikring" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label text="Dato" GridPane.rowIndex="4" />
+                  <Label text="Ubetalte erstaning" GridPane.rowIndex="5" />
+                  <TextField fx:id="txtUbetalt" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <Label text="Forsikring" GridPane.rowIndex="6" />
+                  <RadioButton fx:id="radBåt" mnemonicParsing="false" text="Båt" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <TextField fx:id="txtNavn" editable="false" GridPane.columnIndex="1" />
+                  <Label text="Postkode" GridPane.rowIndex="2" />
+                  <TextField fx:id="txtPostkode" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="184.0" minWidth="10.0" prefWidth="121.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="293.0" minWidth="10.0" prefWidth="178.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="32.0" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="32.0" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="32.0" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="32.0" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="32.0" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="32.0" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="32.0" minHeight="10.0" prefHeight="32.0" valignment="CENTER" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <Button layoutX="265.0" layoutY="247.0" mnemonicParsing="false" text="Registrer" />
+            <Button layoutX="207.0" layoutY="247.0" mnemonicParsing="false" onAction="#slettKunde" text="Slett" />
+            <Button layoutX="136.0" layoutY="247.0" mnemonicParsing="false" text="Rediger" />
+            <Button layoutX="52.0" layoutY="247.0" mnemonicParsing="false" text="Forsikring" />
          </children>
       </AnchorPane>
-   </children>
-</AnchorPane>
+   </right>
+</BorderPane>

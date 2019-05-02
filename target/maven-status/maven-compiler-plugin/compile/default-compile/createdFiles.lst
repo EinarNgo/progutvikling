@@ -1,3 +1,14 @@
+programutvikling/base/InvalidAgeException.class
+programutvikling/controllers/helpers/InvalidInputHandler.class
+programutvikling/base/forsikring/bat.class
+programutvikling/controllers/helpers/FileExceptionHandler.class
+programutvikling/base/forsikring/reise.class
+programutvikling/controllers/helpers/applicationCleaner.class
+programutvikling/base/forsikring/husOgInnbo.class
+programutvikling/base/Person.class
+programutvikling/controllers/controllersHelper/editController.class
+programutvikling/base/forsikring/forsikring.class
+module-info.class
+programutvikling/base/forsikring/fritidsBolig.class
 programutvikling/MainApp.class
 programutvikling/controllers/mainController.class
-module-info.class
