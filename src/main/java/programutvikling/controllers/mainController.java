@@ -28,8 +28,11 @@ public class mainController {
     @FXML
     private DatePicker txtDato;
 
-    private ObservableList<Person> pData = FXCollections.observableArrayList();
+    private ObservableList<Person> pData = FXCollections.observableArrayList();;
 
+    public ObservableList<Person> getpData() {
+        return pData;
+    }
 
     public mainController() {
         // Add some sample data.
@@ -93,7 +96,7 @@ public class mainController {
         Parent root = null;
         try {
             FXMLLoader fxmlLoader = new FXMLLoader();
-            root = fxmlLoader.load(getClass().getResource("/programutvikling/controllers/editKundeScene.fxml").openStream());
+            root = fxmlLoader.load(getClass().getResource("/programutvikling/controllers/registerKundeScene.fxml").openStream());
 
         } catch (IOException e) {
             e.printStackTrace(); // FXML document should be available

@@ -6,7 +6,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="267.0" prefWidth="401.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="programutvikling.controllers.controllersHelper.editController">
+<AnchorPane prefHeight="267.0" prefWidth="401.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="programutvikling.controllers.controllersHelper.registerController">
    <children>
       <GridPane layoutX="25.0" layoutY="23.0" prefHeight="226.0" prefWidth="300.0">
          <children>
@@ -39,6 +39,6 @@
             <RowConstraints maxHeight="32.0" minHeight="10.0" prefHeight="32.0" valignment="CENTER" vgrow="SOMETIMES" />
          </rowConstraints>
       </GridPane>
-      <Button layoutX="287.0" layoutY="222.0" mnemonicParsing="false" onAction="#editKunde" text="Godkjenn" />
+      <Button layoutX="287.0" layoutY="222.0" mnemonicParsing="false" onAction="#registerKunde" text="Godkjenn" />
    </children>
 </AnchorPane>

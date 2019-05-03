@@ -12,15 +12,18 @@ public class Person {
     public final StringProperty forsikring;
     public final StringProperty dato;
 
+    public Person() {
+        this(null,null,null,null,null);
+    }
+
     public Person(String navn, String adresse, String postkode, String forsikring, String dato) {
+
 
         this.navn = new SimpleStringProperty(navn);
         this.adresse = new SimpleStringProperty(adresse);
         this.postkode = new SimpleStringProperty(postkode);
         this.forsikring = new SimpleStringProperty(forsikring);
         this.dato = new SimpleStringProperty(dato);
-
-
     }
 
 

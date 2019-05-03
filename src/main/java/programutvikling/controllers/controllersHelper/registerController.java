@@ -1,15 +1,11 @@
 package programutvikling.controllers.controllersHelper;
 
-import javafx.beans.Observable;
-import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-import programutvikling.MainApp;
 import programutvikling.base.Person;
-import programutvikling.controllers.mainController;
 
-public class editController {
+public class registerController {
 
     private Person Person;
 
@@ -25,17 +21,12 @@ public class editController {
         txtForsikring.setText(Person.getForsikring());
     }
 
-
     @FXML
-    private void editKunde() {
-        Person.setNavn(txtNavn.getText());
-        Person.setAdresse(txtAdresse.getText());
-        Person.setPostkode(txtPostkode.getText());
-        Person.setForsikring(txtForsikring.getText());
+    private void registerKunde() {
+        Person = new Person(txtNavn.getText(),txtAdresse.getText(),txtPostkode.getText(),txtForsikring.getText(),"");
 
         closeWindow();
     }
-
 
     private void closeWindow() {
         Stage myStage = (Stage) txtNavn.getScene().getWindow();

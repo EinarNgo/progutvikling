@@ -39,6 +39,6 @@
             <RowConstraints maxHeight="32.0" minHeight="10.0" prefHeight="32.0" valignment="CENTER" vgrow="SOMETIMES" />
          </rowConstraints>
       </GridPane>
-      <Button layoutX="287.0" layoutY="222.0" mnemonicParsing="false" text="Godkjenn" />
+      <Button layoutX="287.0" layoutY="222.0" mnemonicParsing="false" onAction="#editKunde" text="Godkjenn" />
    </children>
 </AnchorPane>

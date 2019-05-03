@@ -1,4 +1,3 @@
-programutvikling/controllers/controllersHelper/testController.class
 programutvikling/base/InvalidAgeException.class
 programutvikling/controllers/helpers/InvalidInputHandler.class
 programutvikling/base/forsikring/bat.class
@@ -11,5 +10,6 @@ programutvikling/controllers/controllersHelper/editController.class
 programutvikling/base/forsikring/forsikring.class
 module-info.class
 programutvikling/base/forsikring/fritidsBolig.class
+programutvikling/controllers/controllersHelper/registerController.class
 programutvikling/MainApp.class
 programutvikling/controllers/mainController.class
