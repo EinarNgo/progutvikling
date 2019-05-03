@@ -48,18 +48,8 @@ public class mainController {
      */
     @FXML
     private void initialize() {
-        // Setter opp kolonne
-        ColumnNavn.setCellValueFactory(cellData -> cellData.getValue().navnProperty());
-        ColumnForsikring.setCellValueFactory(cellData -> cellData.getValue().forsikringProperty());
 
-        // Clear person details.
-        showPerson(null);
-
-        // Listen for selection changes and show the person details when changed.
-        tblPerson.getSelectionModel().selectedItemProperty().addListener(
-                (observable, oldValue, newValue) -> showPerson(newValue));
-
-        tblPerson.setItems(pData);
+        update();
 
     }
 
@@ -84,6 +74,15 @@ public class mainController {
         int valgtIndex = tblPerson.getSelectionModel().getSelectedIndex();
         if (valgtIndex >=0) {
             tblPerson.getItems().remove(valgtIndex);
+        } else {
+            // Nothing selected.
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.initOwner(txtNavn.getScene().getWindow());
+            alert.setTitle("No Selection");
+            alert.setHeaderText("No Person Selected");
+            alert.setContentText("Please select a person in the table.");
+
+            alert.showAndWait();
         }
     }
 
@@ -142,6 +141,20 @@ public class mainController {
         editPersonStage.initOwner(txtNavn.getScene().getWindow());
         editPersonStage.initModality(Modality.WINDOW_MODAL);
         editPersonStage.show();
+    }
+
+    public void update() {
+
+        ColumnNavn.setCellValueFactory(cellData -> cellData.getValue().navnProperty());
+        ColumnForsikring.setCellValueFactory(cellData -> cellData.getValue().forsikringProperty());
+        // Clear person details.
+        showPerson(null);
+
+        // Listen for selection changes and show the person details when changed.
+        tblPerson.getSelectionModel().selectedItemProperty().addListener(
+                (observable, oldValue, newValue) -> showPerson(newValue));
+
+        tblPerson.setItems(pData);
     }
 
 
