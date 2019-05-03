@@ -1,4 +1,4 @@
-module fxvinduer {
+module fx {
     requires javafx.controls;
     requires javafx.fxml;
 

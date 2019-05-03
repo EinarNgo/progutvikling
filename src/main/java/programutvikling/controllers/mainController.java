@@ -28,9 +28,8 @@ public class mainController {
     @FXML
     private DatePicker txtDato;
 
-    private Person person;
-
     private ObservableList<Person> pData = FXCollections.observableArrayList();
+
 
     public mainController() {
         // Add some sample data.
@@ -163,6 +162,12 @@ public class mainController {
             errorMsg += "Forsikringskode er ugyldig eller feil \n";
         }
 
+        //dato
+
+        //ubetalt erstaning i integer
+
+        //forsikring - vent
+
         if (errorMsg.length() == 0) {
             return true;
 
@@ -178,10 +183,4 @@ public class mainController {
         }
 
     }
-
-
-
-
-
-
 }

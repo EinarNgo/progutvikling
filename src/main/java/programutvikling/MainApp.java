@@ -17,20 +17,8 @@ public class MainApp extends Application{
 
 
     public MainApp() {
-    }
 
-    /*
-    @Override
-    public void start(Stage stage) throws Exception {
-        FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource("/programutvikling/mainView.fxml"));
-        Parent root = loader.load();
-        stage.setResizable(false);
-        stage.setScene(new Scene(root));
-        stage.setTitle("MainApp");
-        stage.show();
     }
-    */
 
     @Override
     public void start(Stage stage) throws Exception {

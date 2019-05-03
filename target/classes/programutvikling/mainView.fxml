@@ -76,7 +76,7 @@
             <Button layoutX="265.0" layoutY="247.0" mnemonicParsing="false" onAction="#registrerKunde" text="Registrer" />
             <Button layoutX="207.0" layoutY="247.0" mnemonicParsing="false" onAction="#slettKunde" text="Slett" />
             <Button layoutX="136.0" layoutY="247.0" mnemonicParsing="false" onAction="#redigerKunde" text="Rediger" />
-            <Button layoutX="52.0" layoutY="247.0" mnemonicParsing="false" text="Forsikring" />
+            <Button layoutX="52.0" layoutY="247.0" mnemonicParsing="false" onAction="#reKunde" text="Forsikring" />
          </children>
       </AnchorPane>
    </right>

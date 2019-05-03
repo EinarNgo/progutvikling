@@ -1,11 +1,9 @@
 package programutvikling.base;
 
-import javafx.beans.InvalidationListener;
-import javafx.beans.Observable;
-import javafx.beans.property.IntegerProperty;
-import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 
 public class Person {
     public final StringProperty navn;
@@ -21,7 +19,10 @@ public class Person {
         this.postkode = new SimpleStringProperty(postkode);
         this.forsikring = new SimpleStringProperty(forsikring);
         this.dato = new SimpleStringProperty(dato);
+
+
     }
+
 
     public String getNavn() {
         return navn.get();
