@@ -12,6 +12,7 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 import programutvikling.base.Person;
 import programutvikling.controllers.controllersHelper.editController;
+import programutvikling.controllers.controllersHelper.registerController;
 
 import java.io.IOException;
 
@@ -30,9 +31,6 @@ public class mainController {
 
     private ObservableList<Person> pData = FXCollections.observableArrayList();;
 
-    public ObservableList<Person> getpData() {
-        return pData;
-    }
 
     public mainController() {
         // Add some sample data.
@@ -75,7 +73,6 @@ public class mainController {
         if (valgtIndex >=0) {
             tblPerson.getItems().remove(valgtIndex);
         } else {
-            // Nothing selected.
             Alert alert = new Alert(Alert.AlertType.WARNING);
             alert.initOwner(txtNavn.getScene().getWindow());
             alert.setTitle("No Selection");
@@ -93,9 +90,16 @@ public class mainController {
 
     private void launchRegistrerPersonScene() {
         Parent root = null;
+        Person tempPerson = new Person();
         try {
             FXMLLoader fxmlLoader = new FXMLLoader();
             root = fxmlLoader.load(getClass().getResource("/programutvikling/controllers/registerKundeScene.fxml").openStream());
+
+
+            registerController controller = fxmlLoader.getController();
+            controller.setPerson(tempPerson);
+
+            pData.add(tempPerson);
 
         } catch (IOException e) {
             e.printStackTrace(); // FXML document should be available
@@ -119,28 +123,40 @@ public class mainController {
     }
 
     private void launchRedigerPersonScene() {
-        Parent root = null;
-        try {
-            FXMLLoader fxmlLoader = new FXMLLoader();
-            root = fxmlLoader.load(getClass().getResource("/programutvikling/controllers/editKundeScene.fxml").openStream());
+        int valgtIndex = tblPerson.getSelectionModel().getSelectedIndex();
+        if (valgtIndex >=0) {
+            Parent root = null;
+            try {
+                FXMLLoader fxmlLoader = new FXMLLoader();
+                root = fxmlLoader.load(getClass().getResource("/programutvikling/controllers/editKundeScene.fxml").openStream());
 
-            // Får tak i controlleren og overfører referanse til person-objektet
-            editController controller = fxmlLoader.getController();
-            controller.setPerson(tblPerson.getSelectionModel().getSelectedItem());
-        } catch (IOException e) {
-            e.printStackTrace(); // FXML document should be available
-            return;
+                // Får tak i controlleren og overfører referanse til person-objektet
+                editController controller = fxmlLoader.getController();
+                controller.setPerson(tblPerson.getSelectionModel().getSelectedItem());
+
+            } catch (IOException e) {
+                e.printStackTrace(); // FXML document should be available
+                return;
+            }
+
+            Scene scene = new Scene(root);
+            // add CSS etc. should be here
+            Stage editPersonStage = new Stage();
+            editPersonStage.setTitle("Endre person");
+            editPersonStage.setScene(scene);
+
+            editPersonStage.initOwner(txtNavn.getScene().getWindow());
+            editPersonStage.initModality(Modality.WINDOW_MODAL);
+            editPersonStage.show();
+        } else {
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.initOwner(txtNavn.getScene().getWindow());
+            alert.setTitle("No Selection");
+            alert.setHeaderText("No Person Selected");
+            alert.setContentText("Please select a person in the table.");
+
+            alert.showAndWait();
         }
-
-        Scene scene = new Scene(root);
-        // add CSS etc. should be here
-        Stage editPersonStage = new Stage();
-        editPersonStage.setTitle("Endre person");
-        editPersonStage.setScene(scene);
-
-        editPersonStage.initOwner(txtNavn.getScene().getWindow());
-        editPersonStage.initModality(Modality.WINDOW_MODAL);
-        editPersonStage.show();
     }
 
     public void update() {

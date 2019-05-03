@@ -16,6 +16,7 @@ public class editController {
     @FXML
     private TextField txtNavn,txtAdresse,txtPostkode,txtForsikring;
 
+
     public void setPerson(Person Person) {
         this.Person = Person;
 

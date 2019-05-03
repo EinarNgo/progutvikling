@@ -9,8 +9,6 @@ import programutvikling.controllers.mainController;
 public class registerController {
 
     private Person Person;
-    private mainController mainController;
-
 
     @FXML
     private TextField txtNavn,txtAdresse,txtPostkode,txtForsikring;
@@ -26,9 +24,11 @@ public class registerController {
 
     @FXML
     private void registerKunde() {
-        Person = new Person(txtNavn.getText(),txtAdresse.getText(),txtPostkode.getText(),txtForsikring.getText(),"");
+        Person.setNavn(txtNavn.getText());
+        Person.setAdresse(txtAdresse.getText());
+        Person.setPostkode(txtPostkode.getText());
+        Person.setForsikring(txtForsikring.getText());
 
-        mainController.update();
         closeWindow();
     }
 

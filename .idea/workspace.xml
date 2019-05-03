@@ -42,14 +42,14 @@
         <counts>
           <entry key="dummy" value="18" />
           <entry key="fxml" value="68" />
-          <entry key="java" value="4002" />
+          <entry key="java" value="4195" />
           <entry key="txt" value="21" />
           <entry key="xml" value="36" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4002" />
+          <entry key="JAVA" value="4195" />
           <entry key="PLAIN_TEXT" value="39" />
           <entry key="XML" value="104" />
         </counts>
@@ -58,28 +58,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="17" lean-forward="true" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/programutvikling/controllers/mainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="79" column="58" selection-start-line="79" selection-start-column="58" selection-end-line="79" selection-end-column="58" />
+            <state relative-caret-position="285">
+              <caret line="99" column="43" selection-start-line="99" selection-start-column="43" selection-end-line="99" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#880#881#0" expanded="true" />
-                <element signature="e#908#909#0" expanded="true" />
                 <element signature="e#2823#2824#0" expanded="true" />
                 <element signature="e#2862#2863#0" expanded="true" />
-                <element signature="e#3934#3935#0" expanded="true" />
-                <element signature="e#3973#3974#0" expanded="true" />
+                <element signature="e#3829#3830#0" expanded="true" />
+                <element signature="e#3871#3872#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -88,8 +77,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/programutvikling/controllers/controllersHelper/editController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="322">
+              <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="34" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -97,34 +86,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/programutvikling/controllers/registerKundeScene.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="41" column="84" lean-forward="true" selection-start-line="41" selection-start-column="84" selection-end-line="41" selection-end-column="84" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/programutvikling/controllers/controllersHelper/registerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+            <state relative-caret-position="370">
+              <caret line="29" column="54" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/programutvikling/controllers/editKundeScene.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="8" column="196" selection-start-line="8" selection-start-column="196" selection-end-line="8" selection-end-column="196" />
             </state>
           </provider>
         </entry>
@@ -132,7 +101,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/programutvikling/MainApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="53">
+            <state relative-caret-position="149">
               <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -146,7 +115,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/programutvikling/base/Person.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
+            <state relative-caret-position="223">
               <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -191,7 +160,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/programutvikling/mainView.fxml">
           <provider editor-type-id="JavaFX-Scene-Builder" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-25">
+            <state relative-caret-position="-840">
               <caret column="38" lean-forward="true" selection-start-column="38" selection-end-column="38" />
             </state>
           </provider>
@@ -239,10 +208,10 @@
         <option value="$PROJECT_DIR$/src/main/resources/programutvikling/controllers/test.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/programutvikling/controllers/controllersHelper/testController.java" />
         <option value="$PROJECT_DIR$/src/main/java/programutvikling/base/Person.java" />
-        <option value="$PROJECT_DIR$/src/main/java/programutvikling/controllers/controllersHelper/editController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/programutvikling/controllers/registerKundeScene.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/programutvikling/controllers/controllersHelper/registerController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/programutvikling/controllers/controllersHelper/editController.java" />
         <option value="$PROJECT_DIR$/src/main/java/programutvikling/controllers/mainController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/programutvikling/controllers/controllersHelper/registerController.java" />
       </list>
     </option>
   </component>
@@ -423,7 +392,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="setPerson&#9;PSI&#9;JAVA://programutvikling.controllers.controllersHelper.editController#setPerson" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556877989129" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556881264299" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -557,7 +526,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2360515" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2360515" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -566,7 +535,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3120482" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3120482" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -777,21 +746,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/programutvikling/MainApp.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
-          <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#640#641#0" expanded="true" />
-            <element signature="e#680#681#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="435">
+          <caret line="29" column="17" lean-forward="true" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/programutvikling/base/Person.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
+        <state relative-caret-position="223">
           <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -831,10 +795,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/programutvikling/MainApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#640#641#0" expanded="true" />
+            <element signature="e#680#681#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/programutvikling/controllers/editKundeScene.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-52">
+          <caret line="8" column="196" selection-start-line="8" selection-start-column="196" selection-end-line="8" selection-end-column="196" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/programutvikling/controllers/registerKundeScene.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
+        <state relative-caret-position="615">
           <caret line="41" column="84" lean-forward="true" selection-start-line="41" selection-start-column="84" selection-end-line="41" selection-end-column="84" />
         </state>
       </provider>
@@ -842,23 +826,29 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/programutvikling/mainView.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-25">
+        <state relative-caret-position="-840">
           <caret column="38" lean-forward="true" selection-start-column="38" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/programutvikling/controllers/editKundeScene.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/programutvikling/controllers/mainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="8" column="196" selection-start-line="8" selection-start-column="196" selection-end-line="8" selection-end-column="196" />
+        <state relative-caret-position="285">
+          <caret line="99" column="43" selection-start-line="99" selection-start-column="43" selection-end-line="99" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2823#2824#0" expanded="true" />
+            <element signature="e#2862#2863#0" expanded="true" />
+            <element signature="e#3829#3830#0" expanded="true" />
+            <element signature="e#3871#3872#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/programutvikling/controllers/controllersHelper/editController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="322">
+          <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="34" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -867,34 +857,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/programutvikling/controllers/controllersHelper/registerController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+        <state relative-caret-position="370">
+          <caret line="29" column="54" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/programutvikling/controllers/mainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="79" column="58" selection-start-line="79" selection-start-column="58" selection-end-line="79" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#880#881#0" expanded="true" />
-            <element signature="e#908#909#0" expanded="true" />
-            <element signature="e#2823#2824#0" expanded="true" />
-            <element signature="e#2862#2863#0" expanded="true" />
-            <element signature="e#3934#3935#0" expanded="true" />
-            <element signature="e#3973#3974#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="17" lean-forward="true" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -955,6 +922,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
