@@ -8,6 +8,7 @@
 /Users/einarn/IdeaProjects/progutvikling/src/main/java/programutvikling/base/InvalidAgeException.java
 /Users/einarn/IdeaProjects/progutvikling/src/main/java/programutvikling/controllers/mainController.java
 /Users/einarn/IdeaProjects/progutvikling/src/main/java/programutvikling/controllers/controllersHelper/editController.java
+/Users/einarn/IdeaProjects/progutvikling/src/main/java/programutvikling/controllers/helpers/inputChecker.java
 /Users/einarn/IdeaProjects/progutvikling/src/main/java/programutvikling/base/forsikring/reise.java
 /Users/einarn/IdeaProjects/progutvikling/src/main/java/programutvikling/base/forsikring/fritidsBolig.java
 /Users/einarn/IdeaProjects/progutvikling/src/main/java/programutvikling/controllers/controllersHelper/registerController.java

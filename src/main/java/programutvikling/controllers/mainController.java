@@ -13,6 +13,7 @@ import javafx.stage.Stage;
 import programutvikling.base.Person;
 import programutvikling.controllers.controllersHelper.editController;
 import programutvikling.controllers.controllersHelper.registerController;
+import programutvikling.controllers.helpers.inputChecker;
 
 import java.io.IOException;
 
@@ -29,7 +30,9 @@ public class mainController {
     @FXML
     private DatePicker txtDato;
 
-    private ObservableList<Person> pData = FXCollections.observableArrayList();;
+    private ObservableList<Person> pData = FXCollections.observableArrayList();
+
+    private inputChecker iC;
 
 
     public mainController() {
@@ -171,48 +174,5 @@ public class mainController {
                 (observable, oldValue, newValue) -> showPerson(newValue));
 
         tblPerson.setItems(pData);
-    }
-
-
-
-    private boolean isInputTrue() {
-        String errorMsg = "";
-
-        if (txtNavn.getText() == null || txtNavn.getText().length() < 2) {
-            errorMsg += "Navnet er ugyldig \n";
-        }
-
-        if (txtAdresse.getText() == null || txtAdresse.getText().length() < 2) {
-            errorMsg += "Adressen er ugyldig \n";
-        }
-
-        if (txtPostkode.getText() == null || txtPostkode.getText().length() != 4 ) {
-            errorMsg += "Postkode er ugyldig \n";
-        }
-
-        if (txtForsikring.getText() == null || txtForsikring.getText().length() !=8) {
-            errorMsg += "Forsikringskode er ugyldig eller feil \n";
-        }
-
-        //dato
-
-        //ubetalt erstaning i integer
-
-        //forsikring - vent
-
-        if (errorMsg.length() == 0) {
-            return true;
-
-        } else {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Invalid Fields");
-            alert.setHeaderText("Please correct invalid fields");
-            alert.setContentText(errorMsg);
-
-            alert.showAndWait();
-
-            return false;
-        }
-
     }
 }

@@ -4,11 +4,13 @@ import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import programutvikling.base.Person;
+import programutvikling.controllers.helpers.inputChecker;
 import programutvikling.controllers.mainController;
 
 public class registerController {
 
     private Person Person;
+    private inputChecker iC;
 
     @FXML
     private TextField txtNavn,txtAdresse,txtPostkode,txtForsikring;
@@ -24,12 +26,13 @@ public class registerController {
 
     @FXML
     private void registerKunde() {
+
         Person.setNavn(txtNavn.getText());
         Person.setAdresse(txtAdresse.getText());
         Person.setPostkode(txtPostkode.getText());
         Person.setForsikring(txtForsikring.getText());
-
         closeWindow();
+
     }
 
     private void closeWindow() {
